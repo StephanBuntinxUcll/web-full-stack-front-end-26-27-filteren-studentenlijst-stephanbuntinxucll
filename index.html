@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="utf-8">
+	<title>Studentenlijst</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/students.js" defer></script>
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+			<h2>Fictieve studentenlijst</h2>
+
+			<form class="row g-3">
+				<div class="col-md-2">
+					<label for="naam" class="form-label">Filter op naam</label>
+					<input type="text" class="form-control" id="naam">
+				</div>
+				<div class="col-md-2">
+					<label for="richting" class="form-label">Filter op afstudeerrichting</label>
+					<select class="form-select" id="richting">
+						<option></option>
+						<option>Elektronica</option>
+						<option>ICT</option>
+					</select>
+				</div>
+				<div class="col-md-2">
+					<label class="form-label">Filter op stage</label><br>
+					<label><input type="checkbox" id="wel_stage" name="stage_status" value="wel_stage" checked>
+						Wel stage</label>
+					<label>
+						<input type="checkbox" id="geen_stage" name="stage_status" value="geen_stage" checked>
+						Geen stage</label>
+				</div>
+
+			</form>
+
+		</header>
+
+		<table id="studentList">
+			<tr>
+				<th id="sort_naam" class="sort">Naam</th>
+				<th id="sort_richting" class="sort">Afstudeerrichting</th>
+				<th id="sort_jaar" class="sort">Jaar</th>
+				<th>Vaardigheden</th>
+				<th id="sort_stage" class="sort">Stage</th>
+			</tr>
+		</table>
+
+	</div>
+
+</body>
+
+</html>
